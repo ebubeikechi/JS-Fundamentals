@@ -2,11 +2,14 @@ const { argv, exit } = require('node:process');
 
 // print process.argv
 argv.forEach((val, index) => {
-    if(index == 1 && argv.at(-1) == val){
+
+    let lastVal = argv.slice(-1)[0];
+
+    if(index == 1 && lastVal == val){
         return console.log('undefined is undefined')
-    } else if(index == 2 && argv.at(-1) == val){
+    } else if(index == 2 && lastVal == val){
         return console.log(argv[2], ' is undefined');
-    } else if(index == 3 && argv.at(-1) == val){
+    } else if(index == 3 && lastVal == val){
         return console.log(argv[2], ' is ', argv[3]);
     }
   
