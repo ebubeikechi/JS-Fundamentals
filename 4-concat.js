@@ -8,9 +8,9 @@ argv.forEach((val, index) => {
     if(index == 1 && lastVal == val){
         return console.log('undefined is undefined')
     } else if(index == 2 && lastVal == val){
-        return console.log(argv[2], ' is undefined');
+        return console.log(argv[2], 'is undefined');
     } else if(index == 3 && lastVal == val){
-        return console.log(argv[2], ' is ', argv[3]);
+        return console.log(argv[2], 'is', argv[3]);
     }
   
 });
