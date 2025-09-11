@@ -15,7 +15,7 @@ argv.forEach((val, index) => {
 
                 for (let i = 0; i < firstDigit; i++) {
 
-                    word = word + 'x';
+                    word = word + 'X';
                 }
 
                 console.log(word);
